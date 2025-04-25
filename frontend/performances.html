@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Спектакли Щеглов</title>
+        <!-- Подключение CSS -->
+        <link rel="stylesheet" href="../static/styles.css">
+        <!-- Подключение иконки сайта -->
+        <link rel="icon" href="../static/schegli_logo.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+
+    <main>
+        <header style="position: sticky;">
+            <div class="button-container" style="background-color: #364270; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; border: 2px solid #364270; outline: 4px solid white;">
+                <button class="blue-button" onclick="toPage('index.html')" style="width: 100%;"><b>Назад</b></button>
+            </div>
+        </header>
+
+        <section style="border: 4px solid #364270;">
+            <div class="grid-container">
+                <div style="text-align: center;">
+                    <img class="interactable-image" src="../static/p12.jpg" width=348 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">Русалочка</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p2.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">Божественная комедия</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p3.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">Цветы для Элджернона</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p4.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">“Каштанка” или Забытые Письма</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p11.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">Дневник Кота Таффи</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p2.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">Книжный Вор</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p2.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">Важные Вещи</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p2.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">За Синей Птицей</fotomark>
+                </div>
+                <div class="interactable-image" style="text-align: center;">
+                    <img src="../static/p2.jpg" width=522 height=348 style="border-radius: 20px;">
+                    <br>
+                    <fotomark style="text-align: center;">Сказка про Емелю</fotomark>
+                </div>  
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' }); // Плавный скролл
+        }
+
+        function toPage(pageName) {
+            window.location.replace(pageName);
+        }
+    </script>
+</html>
