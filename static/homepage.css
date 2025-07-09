@@ -1,0 +1,443 @@
+img {
+    user-select: none;
+}
+
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .particles:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background: url(bg.png);
+    background-size: 512px 512px;
+    animation: moveParticles 20s linear infinite;
+    opacity: 0.10;
+  }
+  
+@keyframes moveParticles {
+    100% { transform: translate(256px, 256px); }
+}
+
+.button-container {
+    text-align: center;
+    background-color: #364270; 
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); 
+    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border: 2px solid #364270; 
+    outline: 4px solid white;
+    user-select: none;
+}
+
+.hoverable-blue {
+    background-color: #364270; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 10px;
+    border: none;
+    
+    transition: ease-out padding 0.1s;
+}
+
+.hoverable-white {
+    color: #364270; 
+    background-color: white; 
+    border-radius: 10px; 
+    padding: 10px;
+    border: none;
+
+    transition: ease-out padding 0.1s;
+}
+
+.hoverable-blue::selection {
+    background-color: white;
+    color: #9A3636;
+}
+
+.hoverable-blue:hover {
+    padding: 20px;
+    transition: ease-in padding 0.1s;
+}
+
+.hoverable-white:hover {
+    padding: 20px;
+    transition: ease-in padding 0.1s;
+}
+
+.hoverable-white::selection {
+    color: white;
+    background-color: #9A3636;
+}
+
+header {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 720px;
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding-left: 72px; /* Отступы внутри контейнера */
+    padding-right: 72px;
+    box-sizing: border-box; /* Учитываем padding в ширине */
+
+    position: fixed;
+    top: 0; /* Прикрепляем к верхней части экрана */
+    left: 0; /* Прикрепляем к левой части экрана */
+}
+
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.playfair-display-sc-bold {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.playfair-display-sc-black {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.playfair-display-sc-regular-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.playfair-display-sc-bold-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.playfair-display-sc-black-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+  
+:root {
+    --font-family: "Playfair Display SC", sans-serif;
+    --second-family: "Playfair Display", sans-serif;
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    color: #364270;
+}
+
+h1::selection {
+    color: #812E2E;
+    background-color: white;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    color: #364270;
+}
+.blue-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #364270;
+}
+
+.blue-text::selection {
+    color: white;
+    background-color: #9A3636;
+}
+
+.white-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
+
+.white-text::selection {
+    background-color: white;
+    color: #9A3636;
+}
+
+fotomark {
+    text-align: center;
+    color: #2F3A63;
+    font-size: 24px;
+    font-weight: 200;
+}
+.blue-button {
+    display: inline-block; /* Элементы в линию */
+    margin: -2px; /* Отступы между кнопками */
+    padding: 10px 20px; /* Внутренние отступы */
+    cursor: pointer; /* Курсор в виде указателя */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 24px;
+    height: 72px;
+    width: 220px;
+    background-color: #364270;
+    border: 4px solid #364270;
+    color: #fff;
+    padding: 0;
+    border: none;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: border 0.1s ease;
+}
+
+.dark-blue-button {
+    display: inline-block; /* Элементы в линию */
+    margin: -2px; /* Отступы между кнопками */
+    padding: 10px 20px; /* Внутренние отступы */
+    cursor: pointer; /* Курсор в виде указателя */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 24px;
+    height: 72px;
+    width: 220px;
+    background-color: #2F3A63;
+    border: 4px solid #364270;
+    color: #fff;
+    padding: 0;
+    border: none;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: border 0.1s ease;
+}
+
+input {
+    background-color: #812E2E;
+    width: 50%;
+    height: 72px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: var(--second-family);
+    outline: none;
+}
+
+input:focus {
+    background-color: #812E2E;
+    width: 50%;
+    height: 72px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: var(--second-family);
+    outline: none;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(155, 155, 155);
+    font-family: var(--second-family);
+    font-weight: 200;
+
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.red-button {
+    display: inline-block; /* Элементы в линию */
+    margin: -2px; /* Отступы между кнопками */
+    padding: 10px 20px; /* Внутренние отступы */
+    cursor: pointer; /* Курсор в виде указателя */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 24px;
+    height: 72px;
+    width: 196px;
+    background-color: #9A3636;
+    color: #fff;
+    padding: 0;
+    border: none;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: border 0.1s ease;
+}
+.dark-blue-button:hover {
+    background-color: #fff;
+    color: #364270;
+    border: 4px solid #364270;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: border 0.1s ease;  
+}
+
+.blue-button:hover {
+    background-color: #fff;
+    color: #364270;
+    border: 4px solid #364270;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: border 0.1s ease;
+}
+
+.dark-blue-button:hover {
+    background-color: #fff;
+    color: #364270;
+    border: 4px solid #364270;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: border 0.1s ease;
+}
+
+.red-button:hover {
+    background-color: #fff;
+    color: #9A3636;
+    border: 4px solid #9A3636;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: border 0.1s ease;
+}
+
+section {
+    width: 100%; /* Фиксированная ширина */
+    max-width: 1440px;
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 72px; /* Отступы внутри контейнера */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+.logo-container {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 720px;
+    box-sizing: border-box;
+    /* border: 1px solid pink; */
+}
+
+.logo-container .item {
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+    /* border: 1px solid black; */
+}
+
+.logo-container .item::selection {
+    background-color: #9A3636;
+    color: white;
+}
+
+
+.text-item-container {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.text-item-container .item {
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.blue-bg {
+    width: 99%; 
+    height:1621px; 
+    background-color: #364270; 
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    gap: 24px;
+}
+
+.interactable-image {
+    filter: brightness(100%);
+    transition: filter 0.1s ease;
+}
+
+.interactable-image:hover {
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+}
+
+.interactable-text {
+    opacity: 0%;
+    transition: opacity 0.3s ease;
+}
+
+.interactable-text:hover {
+    opacity: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.performances {
+    background-color: #364270; 
+    border-radius: 20px;
+}
+
+.social-link:link {
+    color: #2F3A63;
+    transition: color 0.1s ease-in;
+
+}
+
+.social-link:hover {
+    color: #9A3636;
+    transition: 
+        color 0.3s ease-in,
+}
+
+.social-link:visited {
+    color: #812E2E;
+    transition: color 1s ease-in;
+
+
+}
+
+.social-link:visited:hover {
+    color: #364270;
+    transition: color 1s ease-in;
+}

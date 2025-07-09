@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ОТЭС "Щеглы"</title>
     <!-- Подключение CSS -->
-    <link rel="stylesheet" href="./static/styles.css">
+    <link rel="stylesheet" href="./static/homepage.css">
     <!-- Подключение иконки сайта -->
     <link rel="icon" href="./static/schegli_logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,13 +145,13 @@
                     <div class="text-item-container" style="margin-bottom: 36px;">
                         <img src="./static/p9.png" width=100 height=100>
                         <text class="blue-text">
-                            <h2 style="font-weight: 400;"><a href="https://vk.com/schegold">Группа ВК "Театрально-Эстрадная студия "ЩЕГЛЫ"</a></h2>
+                            <h2 style="font-weight: 400;"><a class="social-link" href="https://vk.com/schegold">Группа ВК "Театрально-Эстрадная студия "ЩЕГЛЫ"</a></h2>
                         </text>
                     </div>
                     <div class="text-item-container" style="margin-bottom: 36px;">
                         <img src="./static/p10.webp" width=100 height=100>
                         <text class="blue-text">
-                            <h2 style="font-weight: 400;"><a href="https://t.me/otesschegol">"ТЭС "ЩЕГЛЫ"</a></h2>
+                            <h2 style="font-weight: 400;"><a class="social-link" href="https://t.me/otesschegol">"ТЭС "ЩЕГЛЫ"</a></h2>
                         </text>
                     </div>
                 </div>
@@ -160,23 +160,20 @@
         </main>
 
         <footer id="casting" style="border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: #9A3636;">
-            <section style="text-align: center;">
+            <section style="text-align: center; padding: 24px 72px;">
                 <h1 style="color: white; text-align: center;">Набор в студию</h1>
-                <text class="white-text" style="text-align: center; align-items: center; align-content: center; font-size: 36px;">
+                <div class="white-text" style="text-align: center; align-items: center; align-content: center; font-size: 36px; margin-bottom: 24px;">
                     В настоящее время мы не проводим набор в студию, но вы можете оставить свою почту здесь, и вам обязательно придет письмо о ближайшем наборе!
                     <br>
-                    <br>
-                </text>
+                </div>
                 <input placeholder="Почта, например: example@gmail.com">
             </section>
-            <p style="color: white;">&copy; 2025 Мой сайт. Все права защищены.</p>
-            <p style="color: white; text-align: center; margin-bottom: 0px;">Konstantin Denisov (dofenspot@gmail.com)</p>
-        </footer>   
-    <!-- Подключение JavaScript -->
+            <p style="color: rgba(255, 255, 255, 0.212); text-align: center; margin-bottom: 0px;"><i>cdofenghost</i></p>
+        </footer>
     <script>
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' }); // Плавный скролл
+            section.scrollIntoView({ behavior: 'smooth' });
         }
 
         function toPage(pageName) {
