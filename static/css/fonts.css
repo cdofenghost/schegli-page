@@ -1,3 +1,8 @@
+.kelly-slab {
+    font-family: "Kelly Slab", sans-serif;
+    font-style: normal;
+}
+
 .playfair-display{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -9,7 +14,7 @@
     font-family: "Playfair Display SC", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .playfair-display-sc-bold {
     font-family: "Playfair Display SC", serif;
