@@ -1,41 +1,6 @@
 @import url("fonts.css");
+@import url("styles.css");
 
-img {
-    user-select: none;
-}
-
-html {
-    font-size: clamp(12px, 2vw, 24px);
-    scroll-behavior: smooth;
-}
-
-.particles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    background: #fff;
-    overflow: hidden;
-}
-  
-.particles:after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    background: url(../imgs/bg.png);
-    background-size: 21.3rem 21.3rem;
-    animation: moveParticles 20s linear infinite;
-    opacity: 0.10;
-}
-  
-@keyframes moveParticles {
-    100% { transform: translate(256px, 256px); }
-}
 
 .performance-container {
     display: grid;
@@ -63,39 +28,6 @@ html {
         display: grid;
         grid-template-columns: auto auto auto;
     }
-}
-
-.hoverable {
-    border-radius: 0.5rem; 
-    padding: 0.5rem;
-    border: none;
-    
-    transition: ease-out padding 0.1s;
-}
-
-.blue-element {
-    background-color: #364270; 
-    color: white; 
-}
-
-.white-element {
-    color: #364270; 
-    background-color: white; 
-}
-
-.blue-element::selection {
-    background-color: white;
-    color: #9A3636;
-}
-
-.white-element::selection {
-    background-color: #9A3636;
-    color: white;
-}
-
-.hoverable:hover {
-    padding: 1rem;
-    transition: ease-in padding 0.1s;
 }
 
 header {
@@ -131,30 +63,6 @@ h2 {
     color: #364270;
 }
 
-.blue-text {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: clamp(max(1rem, 14px), 2vw, 1rem);
-    color: #364270;
-}
-
-.blue-text::selection {
-    color: white;
-    background-color: #9A3636;
-}
-
-.white-text {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: clamp(max(1rem, 14px), 2vw, 1rem);
-    color: #fff;
-}
-
-.white-text::selection {
-    background-color: white;
-    color: #9A3636;
-}
-
 fotomark {
     text-align: center;
     color: #2F3A63;
@@ -180,28 +88,6 @@ fotomark {
     padding: 0;
 
     box-sizing: border-box;
-}
-
-.blue-button {
-    background-color: #364270;
-    border: none;
-
-    color: white;
-
-    transition: 
-        border 0.05s ease;
-
-}
-
-.red-button {
-    background-color: #9A3636;
-    border: none;
-
-    color: white;
-
-    transition: 
-        border 0.05s ease;
-
 }
 
 .main-button {
