@@ -16,22 +16,22 @@
     <header style="position: sticky;">
         <div class="button-container">
             <div style="width: 100%;">
-                <button class="blue-button" onclick="scrollToSection('studio')"><b>О студии</b></button>
+                <button class="nav-button blue-button" onclick="scrollToSection('studio')"><b>О студии</b></button>
             </div>
             <div style="width: 100%;">
-                <button class="blue-button" onclick="scrollToSection('performances')"><b>Спектакли</b></button>
+                <button class="nav-button blue-button" onclick="scrollToSection('performances')"><b>Спектакли</b></button>
             </div>
             <div style="width: 100%;">
-                <button class="blue-button" onclick="scrollToSection('programme')"><b>Программа</b></button>
+                <button class="nav-button blue-button" onclick="scrollToSection('programme')"><b>Программа</b></button>
             </div>
             <div style="width: 100%;">
-                <button class="blue-button" onclick="scrollToSection('teachers')"><b>Педагоги</b></button>
+                <button class="nav-button blue-button" onclick="scrollToSection('teachers')"><b>Педагоги</b></button>
             </div>
             <div style="width: 100%;">
-                <button class="blue-button" onclick="scrollToSection('contacts')"><b>Контакты</b></button>
+                <button class="nav-button blue-button" onclick="scrollToSection('contacts')"><b>Контакты</b></button>
             </div>
             <div style="width: 100%;">
-                <button class="red-button" onclick="scrollToSection('casting')"><b>Набор</b></button>
+                <button class="nav-button red-button" onclick="scrollToSection('casting')"><b>Набор</b></button>
             </div>
         </div>
     </header>
@@ -45,8 +45,8 @@
             </div>
         </section>
         <section id="studio">
-            <h1 class="hoverable-blue">О студии</h1>
-            <div class="text-item-container">
+            <h1 class="hoverable blue-element">О студии</h1>
+            <div class="horizontal-container">
                 <img class="item" src="./static/imgs/p1.jpg"  style="border-radius: 1rem; width: 21.75rem; height:14.5rem; border: 4px solid #364270; order: 1;">
                 <text class="item blue-text" style="order: 0;">
                     <b>ЩЕГЛЫ</b> - это коллектив единомышленников, взрослых и детей, объединенных <b>общей творческой работой</b>.
@@ -60,10 +60,10 @@
 
         <div id="performances" style="background-color: #364270; border-radius: 1rem;">
             <section style="padding-top: 1rem;">
-                <h1 class="hoverable-white">Спектакли</h1>
+                <h1 class="hoverable white-element">Спектакли</h1>
                 <div style="display: flex; flex-direction: column; gap: 2rem;">
                     <div class="performance-container">
-                        <div class="text-item-container" style="background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                        <div class="horizontal-container" style="background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
                             <img class="item" src="./static/imgs/p2.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 1;">
                             <text class="item white-text" style="order: 2;">
                                 <h2 style="color: #fff;">Божественная комедия 🎭</h2>
@@ -75,10 +75,10 @@
                                 <br>Возрастное ограничение 16+.
                             </text>
                         </div>
-                        <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
+                        <button class="main-button dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
                     </div>
                     <div class="performance-container">
-                        <div class="text-item-container" style="background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                        <div class="horizontal-container" style="background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
                             <img class="item" src="./static/imgs/p3.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 2;">
                             <text class="item white-text" style="order: 1;">
                                 <h2 style="color: #fff">Цветы для Элджернона 🐁</h2>
@@ -89,10 +89,10 @@
                                 <br>Возрастное ограничение 16+
                             </text>
                         </div>
-                        <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
+                        <button class="main-button dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
                     </div>
                     <div class="performance-container">
-                        <div class="text-item-container">
+                        <div class="horizontal-container">
                             <img class="item" src="./static/imgs/p4.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 1;">
                             <text class="item white-text" style="order: 2">
                                 <h2 style="color: #fff">“Каштанка” или забытые письма 🐕‍🦺</h2>
@@ -102,16 +102,16 @@
                                 <br>Воспоминания Лидии Алексеевны переплелись в один спектакль с историей Каштанки - маленькой рыжей собачки, которая потерялась и волею судьбы попала в дом дрессировщика месье Жоржа. 
                             </text>
                         </div>
-                        <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
+                        <button class="main-button dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
                     </div>
-                    <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Больше спектаклей</b></button>
+                    <button class="main-button dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Больше спектаклей</b></button>
                 </div>
             </section>
         </div>
 
         <section id="programme" style="padding-top: 1rem;">
-            <h1 class="hoverable-blue">Программа</h1>
-            <div class="text-item-container">
+            <h1 class="hoverable blue-element">Программа</h1>
+            <div class="horizontal-container">
                 <text class="blue-text">
                     Занятия в студии направлены на выявление и развитие у детей:
                     <ul>
@@ -130,8 +130,8 @@
 
         <div id="teachers" style="background-color: #364270; border-radius: 1rem">
             <section style="padding-top: 1rem;">
-                <h1 class="hoverable-white">Педагогический состав</h1>
-                <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                <h1 class="hoverable white-element">Педагогический состав</h1>
+                <div class="horizontal-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
                     <img class="item" src="./static/imgs/p6.png" style="width: 8.16rem; height: 8.41rem; border: none;">
                     <text class="item white-text">
                         <h2 style="color: #fff">Сергей Карачевцев</h2>
@@ -140,7 +140,7 @@
                         <br>Блаб ла бла бла бла бла.
                     </text>
                 </div>
-                <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                <div class="horizontal-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
                     <img class="item" src="./static/imgs/p7.png" style="width: 8.16rem; height: 8.16rem; border-radius: 50%; border: none;">
                     <text class="item white-text">
                         <h2 style="color: #fff">Евгения Чемоданова</h2>
@@ -149,7 +149,7 @@
                         <br>Блаб ла бла бла бла бла.
                     </text>
                 </div>
-                <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                <div class="horizontal-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
                     <img class="item" src="./static/imgs/p8.png" style="width: 8.16rem; height: 8.41rem; border: none;">
                     <text class="item white-text">
                         <h2 style="color: #fff">Екатерина Мельдер</h2>
@@ -162,15 +162,15 @@
         </div>
 
         <section id="contacts" style="padding-top: 1rem;">
-            <h1 class="hoverable-blue">Контакты</h1>
-            <div class="text-item-container">
-                <div class="text-item-container" style="margin-bottom: 1.5rem;">
+            <h1 class="hoverable blue-element">Контакты</h1>
+            <div class="horizontal-container">
+                <div class="horizontal-container" style="margin-bottom: 1.5rem;">
                     <img src="./static/imgs/p9.png" style="width: 4rem; height: 4rem;">
                     <text class="blue-text">
                         <h2 style="font-weight: 400;"><a class="social-link" href="https://vk.com/schegold">Группа ВК "Театрально-Эстрадная студия "ЩЕГЛЫ"</a></h2>
                     </text>
                 </div>
-                <div class="text-item-container" style="margin-bottom: 1.5rem;">
+                <div class="horizontal-container" style="margin-bottom: 1.5rem;">
                     <img src="./static/imgs/p10.webp" style="width: 4rem; height: 4rem;">
                     <text class="blue-text">
                         <h2 style="font-weight: 400;"><a class="social-link" href="https://t.me/otesschegol">"ТЭС "ЩЕГЛЫ"</a></h2>
