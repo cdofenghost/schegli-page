@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ОТЭС "Щеглы"</title>
-    <link rel="stylesheet" href="./static/homepage.css">
-    <link rel="icon" href="./static/schegli_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/homepage.css">
+    <link rel="icon" href="./static/imgs/schegli_logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -13,57 +13,58 @@
 
 <body style="margin: 0px;">
     <div class="particles"></div>
-        <header style="position: sticky;">
-            <div class="button-container">
-                <div style="width: 100%;">
-                    <button class="blue-button" onclick="scrollToSection('studio')"><b>О студии</b></button>
-                </div>
-                <div style="width: 100%;">
-                    <button class="blue-button" onclick="scrollToSection('performances')"><b>Спектакли</b></button>
-                </div>
-                <div style="width: 100%;">
-                    <button class="blue-button" onclick="scrollToSection('programme')"><b>Программа</b></button>
-                </div>
-                <div style="width: 100%;">
-                    <button class="blue-button" onclick="scrollToSection('teachers')"><b>Педагоги</b></button>
-                </div>
-                <div style="width: 100%;">
-                    <button class="blue-button" onclick="scrollToSection('contacts')"><b>Контакты</b></button>
-                </div>
-                <div style="width: 100%;">
-                    <button class="red-button" onclick="scrollToSection('casting')"><b>Набор</b></button>
+    <header style="position: sticky;">
+        <div class="button-container">
+            <div style="width: 100%;">
+                <button class="blue-button" onclick="scrollToSection('studio')"><b>О студии</b></button>
+            </div>
+            <div style="width: 100%;">
+                <button class="blue-button" onclick="scrollToSection('performances')"><b>Спектакли</b></button>
+            </div>
+            <div style="width: 100%;">
+                <button class="blue-button" onclick="scrollToSection('programme')"><b>Программа</b></button>
+            </div>
+            <div style="width: 100%;">
+                <button class="blue-button" onclick="scrollToSection('teachers')"><b>Педагоги</b></button>
+            </div>
+            <div style="width: 100%;">
+                <button class="blue-button" onclick="scrollToSection('contacts')"><b>Контакты</b></button>
+            </div>
+            <div style="width: 100%;">
+                <button class="red-button" onclick="scrollToSection('casting')"><b>Набор</b></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="logo-container">
+                <img class="item" src="./static/imgs/schegli_logo.png" style="width: 7.8rem; height: 7.8rem;">
+                <div class="item">
+                    <h1>Образцовая театрально-эстрадная студия "ЩЕГЛЫ"</h1>
                 </div>
             </div>
-        </header>
-        <main>
-            <section>
-                <div class="logo-container">
-                    <img class="item" src="./static/schegli_logo.png" style="width: 7.8rem; height: 7.8rem;">
-                    <div class="item">
-                        <h1>Образцовая театрально-эстрадная студия "ЩЕГЛЫ"</h1>
-                    </div>
-                </div>
-            </section>
-            <section id="studio">
-                <h1 class="hoverable-blue">О студии</h1>
-                <div class="text-item-container">
-                    <img class="item" src="./static/p1.jpg"  style="border-radius: 1rem; width: 21.75rem; height:14.5rem; border: 4px solid #364270; order: 1;">
-                    <text class="item blue-text" style="order: 0;">
-                        <b>ЩЕГЛЫ</b> - это коллектив единомышленников, взрослых и детей, объединенных <b>общей творческой работой</b>.
-                        <br>
-                        <br>Наша студия даёт возможность каждому участнику <b>раскрыть свой потенциал</b>, погружая его в бесконечный творческий процесс: этюды, жонглирование, читки пьес, мастер-классы известных театральных деятелей Томской области, совместные походы в театр и вылазки на природу, участие в фестивалях и конкурсах, ну и конечно - спектакли.
-                        <br>
-                        <br>Мы убеждены - настоящее творчество рождается там, где царят <b>талант, трудолюбие и дружба!</b>
-                    </text>
-                </div>
-            </section>
+        </section>
+        <section id="studio">
+            <h1 class="hoverable-blue">О студии</h1>
+            <div class="text-item-container">
+                <img class="item" src="./static/imgs/p1.jpg"  style="border-radius: 1rem; width: 21.75rem; height:14.5rem; border: 4px solid #364270; order: 1;">
+                <text class="item blue-text" style="order: 0;">
+                    <b>ЩЕГЛЫ</b> - это коллектив единомышленников, взрослых и детей, объединенных <b>общей творческой работой</b>.
+                    <br>
+                    <br>Наша студия даёт возможность каждому участнику <b>раскрыть свой потенциал</b>, погружая его в бесконечный творческий процесс: этюды, жонглирование, читки пьес, мастер-классы известных театральных деятелей Томской области, совместные походы в театр и вылазки на природу, участие в фестивалях и конкурсах, ну и конечно - спектакли.
+                    <br>
+                    <br>Мы убеждены - настоящее творчество рождается там, где царят <b>талант, трудолюбие и дружба!</b>
+                </text>
+            </div>
+        </section>
 
-            <div id="performances" style="background-color: #364270; border-radius: 1rem;">
-                <section style="padding-top: 1rem;">
-                    <div style="display: flex; flex-direction: column; gap: 2rem;">
-                        <h1 class="hoverable-white">Спектакли</h1>
+        <div id="performances" style="background-color: #364270; border-radius: 1rem;">
+            <section style="padding-top: 1rem;">
+                <h1 class="hoverable-white">Спектакли</h1>
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div class="performance-container">
                         <div class="text-item-container" style="background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
-                            <img class="item" src="./static/p2.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 1;">
+                            <img class="item" src="./static/imgs/p2.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 1;">
                             <text class="item white-text" style="order: 2;">
                                 <h2 style="color: #fff;">Божественная комедия 🎭</h2>
                                 Как же она божественна, комедия богов. Боги смотрят и хохочут. Комедия. Смешно. Хахаха.
@@ -74,8 +75,11 @@
                                 <br>Возрастное ограничение 16+.
                             </text>
                         </div>
+                        <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
+                    </div>
+                    <div class="performance-container">
                         <div class="text-item-container" style="background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
-                            <img class="item" src="./static/p3.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 2;">
+                            <img class="item" src="./static/imgs/p3.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 2;">
                             <text class="item white-text" style="order: 1;">
                                 <h2 style="color: #fff">Цветы для Элджернона 🐁</h2>
                                 Главный герой, умственно отсталый, Чарли Гордон, соглашается на экспериментальную операцию на головном мозге, которую до этого испытывали только на лабораторных мышах.
@@ -85,8 +89,11 @@
                                 <br>Возрастное ограничение 16+
                             </text>
                         </div>
-                        <div class="text-item-container" style="background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
-                            <img class="item" src="./static/p4.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 1;">
+                        <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
+                    </div>
+                    <div class="performance-container">
+                        <div class="text-item-container">
+                            <img class="item" src="./static/imgs/p4.jpg" style="width: 22rem; height: 16.6rem; border-radius: 1rem; order: 1;">
                             <text class="item white-text" style="order: 2">
                                 <h2 style="color: #fff">“Каштанка” или забытые письма 🐕‍🦺</h2>
                                 Внезапная встреча превратилась в долгую переписку известного автора Антона Павловича Чехова и начинающей писательницы Лидии Алексеевны Авиловой.
@@ -95,94 +102,96 @@
                                 <br>Воспоминания Лидии Алексеевны переплелись в один спектакль с историей Каштанки - маленькой рыжей собачки, которая потерялась и волею судьбы попала в дом дрессировщика месье Жоржа. 
                             </text>
                         </div>
-                        <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Больше спектаклей</b></button>
+                        <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Посмотреть ближе</b></button>
                     </div>
-                </section>
-            </div>
+                    <button class="dark-red-button" style="border-radius: 1rem; width: 100%;" onclick="toPage('performances.html')"><b>Больше спектаклей</b></button>
+                </div>
+            </section>
+        </div>
 
-            <section id="programme" style="padding-top: 1rem;">
-                <h1 class="hoverable-blue">Программа</h1>
-                <div class="text-item-container">
-                    <text class="blue-text">
-                        Занятия в студии направлены на выявление и развитие у детей:
-                        <ul>
-                            <li>внимания и памяти</li>
-                            <li>фантазии и воображения</li>
-                            <li>улучшение речи и дикции</li>
-                            <li>снятия психологических и физических зажимов</li>
-                            <li>коммуникабельности и раскрепощения</li>
-                        </ul>
-                        
-                        Более детальное описание программы, со всеми активностями, мероприятиями и тд...
+        <section id="programme" style="padding-top: 1rem;">
+            <h1 class="hoverable-blue">Программа</h1>
+            <div class="text-item-container">
+                <text class="blue-text">
+                    Занятия в студии направлены на выявление и развитие у детей:
+                    <ul>
+                        <li>внимания и памяти</li>
+                        <li>фантазии и воображения</li>
+                        <li>улучшение речи и дикции</li>
+                        <li>снятия психологических и физических зажимов</li>
+                        <li>коммуникабельности и раскрепощения</li>
+                    </ul>
+                    
+                    Более детальное описание программы, со всеми активностями, мероприятиями и тд...
+                </text>
+                <img src="./static/imgs/p5.jpg" style="width: 22rem; height: 13.625rem; border-radius: 1rem; border: 4px solid #364270">
+            </div>
+        </section>
+
+        <div id="teachers" style="background-color: #364270; border-radius: 1rem">
+            <section style="padding-top: 1rem;">
+                <h1 class="hoverable-white">Педагогический состав</h1>
+                <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                    <img class="item" src="./static/imgs/p6.png" style="width: 8.16rem; height: 8.41rem; border: none;">
+                    <text class="item white-text">
+                        <h2 style="color: #fff">Сергей Карачевцев</h2>
+                        Руководитель студии, педагог по сценической речи, бла-бла-бла
+                        <br>Бла бла бла
+                        <br>Блаб ла бла бла бла бла.
                     </text>
-                    <img src="./static/p5.jpg" style="width: 22rem; height: 13.625rem; border-radius: 1rem; border: 4px solid #364270">
+                </div>
+                <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                    <img class="item" src="./static/imgs/p7.png" style="width: 8.16rem; height: 8.16rem; border-radius: 50%; border: none;">
+                    <text class="item white-text">
+                        <h2 style="color: #fff">Евгения Чемоданова</h2>
+                        Педагог по сценическому движению, бла-бла-бла
+                        <br>Бла бла бла
+                        <br>Блаб ла бла бла бла бла.
+                    </text>
+                </div>
+                <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
+                    <img class="item" src="./static/imgs/p8.png" style="width: 8.16rem; height: 8.41rem; border: none;">
+                    <text class="item white-text">
+                        <h2 style="color: #fff">Екатерина Мельдер</h2>
+                        Педагог по актерскому мастерству, бла-бла-бла
+                        <br>Бла бла бла
+                        <br>Блаб ла бла бла бла бла.
+                    </text>
                 </div>
             </section>
+        </div>
 
-            <div id="teachers" style="background-color: #364270; border-radius: 1rem">
-                <section style="padding-top: 1rem;">
-                    <h1 class="hoverable-white">Педагогический состав</h1>
-                    <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
-                        <img class="item" src="./static/p6.png" style="width: 8.16rem; height: 8.41rem; border: none;">
-                        <text class="item white-text">
-                            <h2 style="color: #fff">Сергей Карачевцев</h2>
-                            Руководитель студии, педагог по сценической речи, бла-бла-бла
-                            <br>Бла бла бла
-                            <br>Блаб ла бла бла бла бла.
-                        </text>
-                    </div>
-                    <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
-                        <img class="item" src="./static/p7.png" style="width: 8.16rem; height: 8.16rem; border-radius: 50%; border: none;">
-                        <text class="item white-text">
-                            <h2 style="color: #fff">Евгения Чемоданова</h2>
-                            Педагог по сценическому движению, бла-бла-бла
-                            <br>Бла бла бла
-                            <br>Блаб ла бла бла бла бла.
-                        </text>
-                    </div>
-                    <div class="text-item-container" style="margin-bottom: 1.5rem; background-color: #2F3A63; border-radius: 1rem; padding: 1rem;">
-                        <img class="item" src="./static/p8.png" style="width: 8.16rem; height: 8.41rem; border: none;">
-                        <text class="item white-text">
-                            <h2 style="color: #fff">Екатерина Мельдер</h2>
-                            Педагог по актерскому мастерству, бла-бла-бла
-                            <br>Бла бла бла
-                            <br>Блаб ла бла бла бла бла.
-                        </text>
-                    </div>
-                </section>
+        <section id="contacts" style="padding-top: 1rem;">
+            <h1 class="hoverable-blue">Контакты</h1>
+            <div class="text-item-container">
+                <div class="text-item-container" style="margin-bottom: 1.5rem;">
+                    <img src="./static/imgs/p9.png" style="width: 4rem; height: 4rem;">
+                    <text class="blue-text">
+                        <h2 style="font-weight: 400;"><a class="social-link" href="https://vk.com/schegold">Группа ВК "Театрально-Эстрадная студия "ЩЕГЛЫ"</a></h2>
+                    </text>
+                </div>
+                <div class="text-item-container" style="margin-bottom: 1.5rem;">
+                    <img src="./static/imgs/p10.webp" style="width: 4rem; height: 4rem;">
+                    <text class="blue-text">
+                        <h2 style="font-weight: 400;"><a class="social-link" href="https://t.me/otesschegol">"ТЭС "ЩЕГЛЫ"</a></h2>
+                    </text>
+                </div>
             </div>
+            <text class="blue-text">📞 +7 (923) 456 78-90</text>
+        </section>
+    </main>
 
-            <section id="contacts" style="padding-top: 1rem;">
-                <h1 class="hoverable-blue">Контакты</h1>
-                <div class="text-item-container">
-                    <div class="text-item-container" style="margin-bottom: 1.5rem;">
-                        <img src="./static/p9.png" style="width: 4rem; height: 4rem;">
-                        <text class="blue-text">
-                            <h2 style="font-weight: 400;"><a class="social-link" href="https://vk.com/schegold">Группа ВК "Театрально-Эстрадная студия "ЩЕГЛЫ"</a></h2>
-                        </text>
-                    </div>
-                    <div class="text-item-container" style="margin-bottom: 1.5rem;">
-                        <img src="./static/p10.webp" style="width: 4rem; height: 4rem;">
-                        <text class="blue-text">
-                            <h2 style="font-weight: 400;"><a class="social-link" href="https://t.me/otesschegol">"ТЭС "ЩЕГЛЫ"</a></h2>
-                        </text>
-                    </div>
-                </div>
-                <text class="blue-text">📞 +7 (923) 456 78-90</text>
-            </section>
-        </main>
-
-        <footer id="casting" style="border-top-left-radius: 1rem; border-top-right-radius: 1rem; background-color: #9A3636;">
-            <section style="text-align: center; padding: 1rem 3rem;">
-                <h1 style="color: white; text-align: center;">Набор в студию</h1>
-                <div class="white-text" style="text-align: center; align-items: center; align-content: center; font-size: 1.5rem; margin-bottom: 1rem;">
-                    В настоящее время мы не проводим набор в студию, но вы можете оставить свою почту здесь, и вам обязательно придет письмо о ближайшем наборе!
-                    <br>
-                </div>
-                <input placeholder="Почта, например: example@gmail.com">
-            </section>
-            <p style="color: rgba(255, 255, 255, 0.212); text-align: center; margin-bottom: 0px;"><i>cdofenghost</i></p>
-        </footer>
+    <footer id="casting" style="border-top-left-radius: 1rem; border-top-right-radius: 1rem; background-color: #9A3636;">
+        <section style="text-align: center; padding: 1rem 3rem;">
+            <h1 style="color: white; text-align: center;">Набор в студию</h1>
+            <div class="white-text" style="text-align: center; align-items: center; align-content: center; font-size: 1.5rem; margin-bottom: 1rem;">
+                В настоящее время мы не проводим набор в студию, но вы можете оставить свою почту здесь, и вам обязательно придет письмо о ближайшем наборе!
+                <br>
+            </div>
+            <input placeholder="Почта, например: example@gmail.com">
+        </section>
+        <p style="color: rgba(255, 255, 255, 0.212); text-align: center; margin-bottom: 0px;"><i>cdofenghost</i></p>
+    </footer>
     <script>
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
@@ -193,6 +202,6 @@
             window.location.replace(pageName);
         }
     </script>
-    <script src="animated.js"></script>
+    <script src="./static/js/animated.js"></script>
 </body>
 </html>
