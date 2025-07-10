@@ -1,0 +1,91 @@
+@import url("fonts.css");
+@import url("styles.css");
+
+html {
+    font-family: var(--font-family);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+}
+
+.grid-container .item {
+    overflow: hidden;
+}
+
+.performance-container {
+    display: grid;
+    gap: 0.5rem;
+
+    border-radius: 20px; 
+    text-align: center;
+    background-color: var(--blue-color); 
+    border: 0.25rem solid var(--blue-color);
+    height: 100%;
+
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.image-holder {
+    border: 0.125rem dashed var(--blue-color);
+    background-color: var(--dark-blue-color);
+    border-radius: 1rem;
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 15rem;
+
+    padding: 0.25rem;
+
+    box-sizing: content-box;
+}
+
+.description {
+    font-size: clamp(max(1rem, 14px), 2vw, 1rem);
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: var(--dark-blue-color);
+    border: 0.125rem dashed var(--blue-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.description::selection {
+    color: white;
+    background-color: var(--red-color);
+}
+
+.image-holder img{
+    border-radius: 1rem;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 15rem;
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--blue-color)
+    ;
+}
+
+h1::selection {
+    color: white;
+    background-color: var(--red-color);
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--blue-color);
+}
+
+

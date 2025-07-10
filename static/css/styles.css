@@ -2,6 +2,14 @@ img {
     user-select: none;
 }
 
+:root {
+    --blue-color: #364270;
+    --red-color: #9A3636;
+
+    --dark-blue-color: #2F3A63;
+    --dark-red-color: #812E2E;
+}
+
 html {
     font-size: clamp(12px, 2vw, 24px);
     scroll-behavior: smooth;
@@ -35,6 +43,49 @@ html {
     100% { transform: translate(256px, 256px); }
 }
 
+header {
+    width: 100%;
+    max-width: 60rem;
+    min-width: 30rem;
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+section {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.nav-button {
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 1rem;
+
+    display: inline-block;
+    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+    height: 3rem;
+    width: 100%;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
 .hoverable {
     border-radius: 0.5rem; 
     padding: 0.5rem;
@@ -50,6 +101,11 @@ html {
 
 .blue-element {
     background-color: #364270; 
+    color: white; 
+}
+
+.red-element {
+    background-color: var(--red-color); 
     color: white; 
 }
 
@@ -112,4 +168,21 @@ html {
     transition: 
         border 0.05s ease;
 
+}
+
+.blue-button:hover {
+    background-color: #fff;
+    color: #364270;
+    border: 4px solid #364270;
+    transition: 
+        border 0.1s ease;
+}
+
+
+.red-button:hover {
+    background-color: #fff;
+    color: #9A3636;
+    border: 4px solid #9A3636;
+    transition: 
+        border 0.1s ease;
 }

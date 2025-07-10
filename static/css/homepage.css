@@ -1,7 +1,6 @@
 @import url("fonts.css");
 @import url("styles.css");
 
-
 .performance-container {
     display: grid;
     background-color: #2F3A63; 
@@ -30,20 +29,6 @@
     }
 }
 
-header {
-    width: 100%;
-    max-width: 60rem;
-    min-width: 30rem;
-    margin: 0 auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    box-sizing: border-box;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
 h1 {
     font-family: var(--font-family);
     font-weight: 700;
@@ -68,26 +53,6 @@ fotomark {
     color: #2F3A63;
     font-size: 1rem;
     font-weight: 200;
-}
-
-.nav-button {
-    font-family: var(--font-family);
-    text-align: center;
-    font-size: 1rem;
-
-    display: inline-block;
-    cursor: pointer;
-
-    padding: 0.5rem 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    
-    height: 3rem;
-    width: 100%;
-
-    padding: 0;
-
-    box-sizing: border-box;
 }
 
 .main-button {
@@ -150,59 +115,12 @@ input::placeholder {
     user-select: none;
 }
 
-.red-nav-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    font-family: var(--font-family);
-    text-align: center;
-    font-size: 1rem;
-    height: 3rem;
-    width: 100%;
-    background-color: #9A3636;
-    color: #fff;
-    padding: 0;
-    border: none;
-    transition: 
-        border 0.1s ease;
-
-    box-sizing: border-box;
-
-}
-
 .dark-red-button:hover {
     background-color: #fff;
     color: #9A3636;
     border: 0.125rem solid #364270;
     transition: 
         border 0.1s ease;  
-}
-
-.blue-button:hover {
-    background-color: #fff;
-    color: #364270;
-    border: 4px solid #364270;
-    transition: 
-        border 0.1s ease;
-}
-
-
-.red-button:hover {
-    background-color: #fff;
-    color: #9A3636;
-    border: 4px solid #9A3636;
-    transition: 
-        border 0.1s ease;
-}
-
-section {
-    width: 100%;
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 3rem;
-    box-sizing: border-box;
 }
 
 .logo-container {
