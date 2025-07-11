@@ -9,6 +9,11 @@ html {
     display: grid;
     grid-template-columns: auto auto;
     gap: 0.5rem;
+
+    @media screen and (width <= 40rem) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .grid-container .item {

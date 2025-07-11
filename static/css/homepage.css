@@ -115,6 +115,11 @@ input::placeholder {
     user-select: none;
 }
 
+.dark-red-button::selection {
+    background-color: white;
+    color: #9A3636;
+}
+
 .dark-red-button:hover {
     background-color: #fff;
     color: #9A3636;
