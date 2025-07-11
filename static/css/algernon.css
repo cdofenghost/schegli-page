@@ -1,24 +1,143 @@
-#myVideo {
-    position: fixed;
-
-    height: 120px;
-    z-index: -100;
-    overflow: hidden;
-}
-
 .white-button {
-    background-color: white;
-    color: black;
+    opacity: 75%;
+    background-color: transparent;
+    color: white;
     border: none;
     outline: none;
 
+    border: 0.125rem solid white;
+    transition: 
+        background-color 0.1s ease-in,
+        opacity 0.1s ease-in,
+        color 0.1s ease-in;
+}
+ 
+.white-button::selection {
+    background-color: white;
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+}
+
+h1::selection, h2::selection {
+    background-color: white;
+    color: black;
+}
+
+.white-button:hover {
+    opacity: 100%;
+    background-color: white;
+    color: black;
+
+    transition: 
+        background-color 0.1s ease-in,
+        opacity 0.1s ease-in,
+        color 0.1s ease-in;
+}
+
+.white-button:hover::selection {
+    background-color: black;
+    color: white;
 }
 
 .description {
+    color: white;
+    opacity: 50%;
 
+    transition: 
+        opacity 0.7s ease-in;
+}
+
+.description h2 {
+    text-align: left;
+}
+
+.description:hover {
+    opacity: 100%;
+
+    transition: 
+        opacity 0.3s ease-in;
+}
+
+.description::selection {
+    background-color: white;
+    color: black;
 }
 
 html {
     padding: 0;
     margin: 0;
+}
+
+.video-container {
+    opacity: 25%;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: -100; 
+    
+    width: 100vw; 
+    text-align: center;
+    align-content: center;
+
+    height: 100vh;
+
+    transition: 
+        opacity 0.3s ease-in;
+}
+
+.video-container:hover {
+    opacity: 90%;
+
+    transition: 
+        opacity 0.1s ease-in;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    gap: 1rem;
+}
+
+.grid-item {
+    display: grid;
+    width: 100%;
+}
+
+.scroll-container {
+    display: flex;
+    opacity: 75%;
+    gap: 1rem;
+    border: 0.125rem solid white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0.5rem
+}
+
+.scroll-container:hover {
+    opacity: 100%;
+    
+    transition: 
+        opacity 0.1s ease-in;
+}
+
+.image-card {
+    opacity: 75%;
+    width: fit-content;
+}
+
+.image-card:hover {
+    opacity: 100%;
+
+    transition: 
+        opacity 0.1s ease-in;
+}
+
+.image-card img {
+    width: auto;
+    height: 10rem;
 }

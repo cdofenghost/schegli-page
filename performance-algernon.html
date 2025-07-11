@@ -6,25 +6,71 @@
         <title>Цветы для Элджернона</title>
         <link rel="stylesheet" href="./static/css/styles.css">
         <link rel="stylesheet" href="./static/css/fonts.css">
+        <link rel="stylesheet" href="./static/css/algernon.css">
         <link rel="icon" href="./static/imgs/schegli_logo.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
     </head>
-    <body style="margin: 0; overflow-x: hidden; background-color: black;">
-        <div style="position: absolute; left: 0; top: 24; z-index: -100; width: 100vw; text-align: center;">
-            <video autoplay muted loop id="myVideo" style="opacity: 25%; object-fit: cover; width: 90vw; height: 90vh;">
+    <body style="margin: 0 6rem; overflow-x: hidden; background-color: black;">
+        <div class="video-container">
+            <video autoplay muted loop id="myVideo" style="width: 100%; height: 95vh;">
                 <source src="./static/imgs/algernon.mp4" type="video/mp4">
-            </video>   
+            </video>  
         </div>
         <h1 class="kelly-slab" style="color: white; text-align: center;">Цветы для Элджернона</h1>
-        <section>
-            <div class="description kelly-slab" style="color: white;">
-                Главный герой, умственно отсталый, Чарли Гордон, соглашается на экспериментальную операцию на головном мозге, которую до этого испытывали только на лабораторных мышах.
-                Могут ли знания сделать человека счастливым? Нужно ли обладать высоким IQ, чтобы быть личностью? Чего стоит настоящая дружба? Почему так важно любить?
+        <section style="padding-bottom: 1rem;">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="description kelly-slab">
+                        <h2 class="kelly-slab"><u>Содержание эксперимента: </u></h2>
+                        Главный герой, умственно отсталый, <span style="background-color: white; color: black;">Чарли Гордон</span>, соглашается на <span style="background-color: white; color: black;">экспериментальную операцию</span> на головном мозге, которую до этого испытывали только на <span style="background-color: white; color: black;">лабораторных мышах</span>.
+                    </div>
+                    <div class="description kelly-slab">
+                        <h2 class="kelly-slab"><u>Выяснить: </u></h2>
+                        <ul>
+                            <li>Могут ли <span style="background-color: white; color: black;">знания</span> сделать человека счастливым?</li>
+                            <li>Нужно ли обладать <span style="background-color: white; color: black;">высоким IQ</span>, чтобы быть личностью?</li>
+                            <li>Чего стоит <span style="background-color: white; color: black;">настоящая дружба?</span></li>
+                            <li>Почему так важно <span style="background-color: white; color: black;">любить?</span></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="description kelly-slab">
+                        <h2 class="kelly-slab"><u>Локация исследований: </u></h2>
+                        <span style="background-color: white; color: black;">ДНТ "Авангард"</span>
+                    </div>
+                    <div class="description kelly-slab">
+                        <h2 class="kelly-slab"><u>Начало ближайшего эксперимента: </u></h2>
+                        <span style="background-color: white; color: black;">18 ноября, 19:00</span>
+                    </div>
+                </div>
             </div>
-            <div style="border: 2px solid white; text-align: center;">
-                <button class="kelly-slab white-button" style="width: 100%; font-weight: 500; font-size: 1rem;">Привет</button>
+            <div style="text-align: center;">
+                <a href="https://www.afisha.ru/performance/cvety-dlya-eldzhernona-277604/" style="outline: none;">
+                    <button class="kelly-slab white-button" style="width: 100%; font-weight: 500; font-size: 1rem;">Приобрести билеты на эксперимент</button>
+                </a>
+            </div>
+        </section>
+        <section style="padding: 0 3rem 3rem 3rem;">
+            <h1 class="kelly-slab">Снимки предыдущих экспериментов</h1>
+            <div class="scroll-container">
+                <div class="image-card">
+                    <img src="./static/imgs/al_ex1.jpg">
+                </div>
+                <div class="image-card">
+                    <img src="./static/imgs/al_ex2.jpg">
+                </div>
+                <div class="image-card">
+                    <img src="./static/imgs/al_ex3.jpg">
+                </div>
+                <div class="image-card">
+                    <img src="./static/imgs/al_ex4.jpg">
+                </div>
+                <div class="image-card">
+                    <img src="./static/imgs/al_ex5.jpg">
+                </div>
             </div>
         </section>
     </body>
